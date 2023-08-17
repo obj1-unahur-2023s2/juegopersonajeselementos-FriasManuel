@@ -1,4 +1,4 @@
-import armas.*  // para importar otros archivos 
+import armas.* 
 import elementos.*
 
 object floki {
@@ -17,13 +17,13 @@ object floki {
 
 object mario {
 	var cantidadRecolectada = 0
-	var elementoEncontrado = 0 
+	var elementoEncontrado  
 	
 	method encontrar(unElemento){
 		unElemento.reibirTrabajo()
-		elementoEncontrado = unElemento.altura()
+		elementoEncontrado = unElemento
 		cantidadRecolectada += unElemento.otorgarUnidades()
 		}
-	method esFeliz() = cantidadRecolectada >=50 or elementoEncontrado > 10
+	method esFeliz() = cantidadRecolectada >=50 or elementoEncontrado.altura() > 10
 	
 }
