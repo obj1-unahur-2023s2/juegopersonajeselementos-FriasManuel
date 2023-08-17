@@ -17,10 +17,13 @@ object floki {
 
 object mario {
 	var cantidadRecolectada = 0
+	var elementoEncontrado = 0 
 	
 	method encontrar(unElemento){
 		unElemento.reibirTrabajo()
+		elementoEncontrado = unElemento.altura()
 		cantidadRecolectada += unElemento.otorgarUnidades()
 		}
-}	
-
+	method esFeliz() = cantidadRecolectada >=50 or elementoEncontrado > 10
+	
+}

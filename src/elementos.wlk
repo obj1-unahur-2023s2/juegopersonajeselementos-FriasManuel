@@ -25,7 +25,8 @@ object aurora {
 
 object tipa {
 	var altura = 8 
-
+	
+	method altura() = altura
 	method recibirAtaque(unValor){}	
 	method reibirTrabajo(){	altura ++ }
 	method otorgarUnidades() = altura* 2 //Metodo de consulta
